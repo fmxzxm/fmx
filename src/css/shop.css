@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+/* #all{
+    width: 1333px;
+    height: 3062px;
+    /* background: lightgreen; 
+} */
+
+/* 上部分 */
+/* .top{
+    width: 100%;
+    height: 1202px;
+    /* background: red; 
+    float: left;
+} */
+
+.fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+/* 导航栏 */
+.top_1{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    background: #f8f8f8;
+    float: left;
+}
+.top_1_left{
+    width: 40%;
+    height: 100%;
+    margin-left: 66px;
+    float: left;
+    line-height: 30px;
+    /* background: blue; */
+    font-size: 11px;
+}
+.top_1_left span{
+    color: #bbb;
+}
+.top_1_left a{
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+.top_1_left a:hover{
+    color: red;
+}
+
+.top_1_right{
+    width: 40%;
+    height: 70%;
+    margin-left: 120px;
+    float: left;
+    line-height: 23px;
+    /* background: blue; */
+    font-size: 11px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    margin-top: 4px;
+}
+.top_1_right li{
+    height: 90%;
+    width: 102px;
+    /* background: green; */
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    border-right: 1px solid #d3d3d3;
+    cursor: pointer;
+}
+.top_1_right li:hover{
+    color: red;
+}
+.li1{
+    border-right:0px !important;
+}
+/* 轮播图 */
+.top_2{
+    width: 100%;
+    height: 118px;
+    float: left;
+    position: relative;
+    /* background: lightcoral; */
+    transition: all 1s;
+}
+.top_2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    
+}
+/* 搜索部分 */
+.top_3{
+    width: 100%;
+    height: 134px;
+    background: #e0e0e0;
+    /* background: purple; */
+    float: left;
+}
+
+.top_3_l{
+    width: 258px;
+    height: 100%;
+    float: left;
+    /* background: orangered; */
+    margin-left: 66px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.top_3_l img{
+    cursor: pointer;
+}
+.top_3_m{
+    width: 610px;
+    height: 100%;
+    /* background: rgb(75, 78, 235); */
+    float: left;
+    margin-left: 20px;
+}
+.top_3_m input{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+#inp2{
+    width: 80px;
+    height: 43px;
+    background: #fb1116;
+    color: #fff;
+    margin-left: -5px;
+    border: 0px;
+    border-bottom: 2px solid #fb1116;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.ul1{
+    width: 100%;
+    height: 30px;
+    /* background: #58bc58; */
+    float: left;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+.ul1 li{
+    width: 66px;
+    height: 100%;
+    /* background: blueviolet; */
+    float: left;
+    /* margin-left: 10px; */
+    line-height: 30px;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 11px;
+    cursor: pointer;
+   
+}
+.ul1 li:hover{
+    color: red;
+}
+
+.ul2{
+    width: 100%;
+    height: 30px;
+    /* background: #58bc58; */
+    float: left;
+    box-sizing: border-box;
+    /* padding-left: 30px; */
+    margin-top: 8px;
+}
+
+.ul2 li{
+    width: 66px;
+    height: 100%;
+    float: left;
+    /* background: blueviolet; */
+    line-height: 30px;
+    color: #4b4b4b;
+    margin-left: 2px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ul2 li:hover{
+    color: red;
+}
+
+.top_3_r{
+    width: 260px;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    float: left;
+    margin-left: 46px;
+}
+
+.top_3_r p{
+    width: 200px;
+    height: 43px;
+    float: left;
+    /* background: purple; */
+    margin-top: 20px;
+    margin-left: 50px;
+    /* line-height: 43px; */
+    border: 1px solid #fd7400;
+    position: relative;
+}
+
+.top_3_r p img{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.top_3_r p span{
+    margin-left: 20px;
+    color: #fd7400;
+    font-size: 14px;
+}
+.coou{
+    display: inline-block;
+    background:  #fd7400;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    border-radius: 50%;
+    font-size: 12px !important;
+    color: #fff !important;
+    text-align: center;
+    line-height: 25px;
+
+}
+.middle{
+    width: 100%;
+    max-height:10000px;
+    float: left;
+    /* background: yellow */
+}
+.tname{
+    width: 90%;
+    height: 50px;
+    float: left;
+    /* background: orange; */
+    margin-left: 66px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tname_l{
+    width: 200px;
+    height: 100%;
+    float: left;
+    /* background: palevioletred; */
+    font-size: 12px;
+    color:#333;
+    line-height: 50px;
+}
+.tname_r{
+    width: 680px;
+    height: 100%;
+    float: right;
+    /* background: palegreen; */
+}
+
+.tname_r span{
+    width: 20%;
+    height: 100%;
+    line-height: 50px;
+    float: left;
+    /* background: rgb(81, 81, 228); */
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+#cart{
+    width: 90%;
+    max-height: 4000px;
+    float: left;
+    /* background: purple; */
+    margin-left: 66px;
+}
+#cart a{
+    text-decoration: none;
+    color: #333333;
+}
+#cart a:hover{
+    color: lawngreen;
+}
+
+#cart li{
+    width: 100%;
+    height: 100px;
+    border-bottom:1px solid #ccc;
+    float: left;
+    /* background: green; */
+    line-height: 100px;
+    
+}
+#cart li p{
+    width: 150px;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    color: #333;
+}
+
+#cart li p input{
+    width: 30px;
+}
+
+#cart .good_check{
+    width: 30px;
+    /* background: yellow; */
+}
+
+#cart .immmg{
+    width: 80px;
+    height: 80px;
+    float: left;
+    /* background: green; */
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#cart .immmg img{
+    width: 100%;
+    height: 100%;
+}
+
+#cart .good_name{
+    width: 200px;
+    float: left;
+    /* background: pink; */
+    margin-left: 20px;
+}
+#cart .good_price{
+    width: 100px;
+    float: left;
+    margin-left: 210px;
+    /* background: orange; */
+    color: #fb1116;
+    font-weight: bold;
+}
+#cart .num{
+    width: 100px;
+    float: left;
+    /* background: purple; */
+    margin-left: 33px;
+    user-select: none;
+}
+#cart .num span{
+    /* display: inline-block; */
+    cursor: pointer;
+    border: 1px solid #ccc;
+    /* width: 20px;
+    height: 20px;
+    margin-top: 20px; */
+}
+
+
+#cart .good_total{
+    width: 100px;
+    float: left;
+    /* background: orangered; */
+    margin-left: 33px;
+    color: #fb1116;
+    font-weight: bold;
+}
+
+#cart .zhi{
+    width: 100px;
+    float: left;
+    /* background: palegreen; */
+    margin-left: 33px;
+}
+
+#cart .good_del{
+    width: 100px;
+    float: left;
+    /* background: palevioletred; */
+    margin-left: 33px;
+}
+
+
+
+
+
+#del{
+    width: 90%;
+    height: 80px;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 66px;
+    margin-top: 10px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+#del p{
+    width: 33%;
+    height: 100%;
+    /* background: yellow; */
+    float: left;
+    line-height: 80px;
+    font-size: 11px;
+    color: #333;
+    text-align: center;
+}
+#del #allchecked{
+    width: 180px;
+    float: left;
+    /* background: green; */
+    text-align: left;
+}
+#del #allchecked span{
+    margin-left: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#del #allchecked span:hover{
+    color: lawngreen;
+}
+
+#del #allchecked #zhifu{
+    background: purple !important;
+}
+
+#del #allnum{
+    width: 130px;
+    float: left;
+    /* background: blue; */
+    margin-left: 482px;
+}
+#del #totalprice{
+    width: 260px;
+    float: left;
+    /* background: orange; */
+    margin-left: 20px;
+
+}
+#del #totalprice b{
+    font-size: 24px;
+    color: #333;
+}
+#del #go{
+    width: 120px;
+    height: 100%;
+    float: left;
+    background: #fd7400;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+/* 
+.tj .tjl{
+    font-size: 12px;
+    color: #333;
+    line-height: 80px;
+
+}
+.tj .tjl input{
+    margin-right: 20px;
+}
+.tj .tjl .go{
+    margin-left: 20px;
+}
+.tj .tjr{
+    float: right;
+    font-size: 12px;
+    color: #333;
+    line-height: 80px;
+}
+.tj .tjr .tcount{
+    margin-right: 20px;
+    color: #fb1116;
+}
+
+.tj .tjr .tprice{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tj .tjr .tjie{
+    display: inline-block;
+    width: 98px;
+    height: 80px;
+    background: #fd7400;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    /* float: left; 
+} */
+
+
+
+
+/* 购物车的样式 */
+
+
+

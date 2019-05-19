@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/jquery-1.10.1.min.js"></script>
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none
+        }
+
+        ul {
+            width: 300px;
+            background: pink;
+            margin: 50px auto;
+        }
+
+        ul>li {
+            line-height: 50px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul>li>ol {
+            background: paleturquoise;
+            display: none;
+        }
+
+        ul>li>ol>li {
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="ul">
+        <li>
+            <p>使至塞上 王维</p>
+            <ol>
+                <li>单车欲问边，属国过居延</li>
+                <li>征蓬出汉塞，归雁入胡天</li>
+                <li>大漠孤烟直，长河落日圆</li>
+                <li>萧关逢候骑，都护在燕然</li>
+            </ol>
+        </li>
+        <li>
+            <p>登黄鹤楼 崔颢</p>
+            <ol>
+                <li>昔人已乘黄鹤去，此地空余黄鹤楼</li>
+                <li>黄鹤一去不复返，白云千载空悠悠</li>
+                <li>晴川历历汉阳树，芳草萋萋鹦鹉洲</li>
+                <li>日暮乡关何处是，烟波江上使人愁</li>
+            </ol>
+        </li>
+        <li>
+            <p>无题 李商隐</p>
+            <ol>
+                <li>相见时难别亦难，东风无力百花残</li>
+                <li>春蚕到死丝方尽，蜡炬成灰泪始干</li>
+                <li>晓镜但愁云鬓改，夜吟应觉月光寒</li>
+                <li>蓬山此去无多路，青鸟殷勤为探看</li>
+            </ol>
+        </li>
+        <li>
+            <p>过故人庄 孟浩然</p>
+            <ol>
+                <li>故人具鸡黍，邀我至田家。</li>
+                <li>绿树村边合，青山郭外斜。</li>
+                <li>开轩面场圃，把酒话桑麻。</li>
+                <li>待到重阳日，还来就菊花。</li>
+            </ol>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $("#ul>li>p").mousemove(function () {
+            $(this).next().slideDown().end().parent().siblings()
+                .children("ol").hide();
+        });  
+    </script>
+</body>
+
+</html>
